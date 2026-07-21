@@ -142,7 +142,28 @@ body {
     📥 Unloading seed dry
   </a>
 
+<!-- BIN MONITORING -->
+  <div class="section">Bin Monitoring</div>
+
+  <a class="btn" href="#" onclick="bukaBinmonitoring(event)">
+    📦 Bin Monitoring internal
+  </a>
+
+
 </div>
+<script>
+function bukaBinmonitoring(e) {
+  e.preventDefault();
+
+  const password = prompt("Masukkan password untuk membuka HDD Record:");
+
+  if (password === "advjago26") { // Ganti dengan password yang diinginkan
+    window.location.href = "https://datastudio.google.com/reporting/fe3deb9d-6514-4e40-8238-fcae4d0e65ca";
+  } else if (password !== null) {
+    alert("Password salah!");
+  }
+}
+</script>
 
 </body>
 </html>
